@@ -4,48 +4,60 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("images/background.jpg");
+  background-image: url("images/bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
   text-align: center;
-  overflow-x: hidden;
-  font-family: "Estonia", cursive;
+  font-family: "Oswald", sans-serif;
 }
-section {
 
- 
-  color: yellow;
-  font-family: "Estonia", cursive;
-}
+/* logoooo */
 .logo {
   width: max-content;
   height: max-content;
   margin: 20px auto;
   padding: 10px;
   border-radius: 15px;
+  margin-top: 50px;
 }
 .logo img {
   width: 150px;
-
 }
+/* heading */
 
 .text h1 {
   text-align: center;
-  letter-spacing: 10px;
   font-weight: bolder;
-  font-size: 60px;
-  margin-bottom: 20px;
+  font-size: 40px;
+  margin: 50px auto;
+  font-family: "Oswald", sans-serif;
+  color: rgb(248, 182, 37);
+  font-weight: bolder;
 }
-.img {
 
+/* order */
+.order h1 {
+  color: rgb(248, 182, 37);
   text-align: center;
-  padding: 70px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+/* images */
+.img {
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px !important;
 }
 .img img {
   width: 100%;
-
 }
+/* contact */
 
 .contact {
   width: 100%;
@@ -54,9 +66,11 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 30px;
+  margin-top: 100px !important;
   text-align: center;
-  overflow-x: hidden;
+  color: rgb(248, 182, 37);
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 100px;
 }
 .sub-contact {
   text-align: center;
@@ -65,62 +79,52 @@ section {
   display: flex;
   flex-direction: column;
   padding: 40px 70px 90px 70px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .sub-contact h1 {
   text-align: center;
-  font-family: "Estonia", cursive;
-  letter-spacing: 10px;
-  font-weight: bolder;
-  font-size: 80px;
-  margin-bottom: 30px;
-}
-.sub-contact p {
+  font-family: "Oswald", sans-serif;
   font-weight: bolder;
   font-size: 40px;
+  margin-bottom: 50px;
 }
-.fb i{
-  color: yellow;
-  font-size: 30px;
-
+.sub-contact p {
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0px;
 }
-.fb  a:hover{
-  color:white;
-  
-}
-
-.order h1 {
-  color: yellow;
-  text-align: center;
-  font-family: "Estonia", cursive;
-  letter-spacing: 10px;
-  font-weight: bolder;
-  font-size: 70px;
-
-  margin-top: 30px;
-}
-.order h4 {
-  color: yellow;
-  text-align: center;
-  font-family: "Estonia", cursive;
-  font-weight: bolder;
+.sub-contact p span {
   font-size: 30px;
 }
-.order h4:hover {
-  color: orange;
-  transform: translateY(-5px);
-  transition: 0.3s ease-in-out;
+
+.sub-contact p:hover {
+  color: white;
+  cursor: pointer;
 }
+
+.icon a {
+  text-decoration: none;
+  color: rgb(248, 182, 37);
+}
+.icon a:hover {
+  color: white;
+}
+
+/* contact-end */
 
 /* media queries */
 @media (max-width: 500px) {
   body {
-    overflow-x: hidden;
     box-sizing: border-box;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+  }
+  .logo {
+    margin-top: 60px;
   }
   .logo img {
-    width: 30px;
-    height: 30px;
+    width: 100px;
   }
   .text h1 {
     font-size: 30px;
@@ -130,33 +134,41 @@ section {
     margin-left: 0px;
     width: 100%;
     height: max-content;
+
+    padding: 0 30px;
+    margin: 20px;
+    margin-top: 30px;
   }
   .img img {
-    width: 80%;
-    height: 250px;
+    width: 90%;
+    margin-top: 5px;
   }
   .sub-contact {
-    padding: 10px;
-    letter-spacing: 1px;
+    padding: 0px;
+    letter-spacing: 7px;
     font-size: 20px;
+    height: max-content;
   }
   .sub-contact h1 {
     letter-spacing: 4px;
     font-weight: bolder;
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
   }
   .sub-contact p {
     font-weight: bolder;
     font-size: 20px;
+    margin-bottom: 3px;
+    height: max-content;
+    margin-top: 0px;
+    letter-spacing: 0px;
   }
-  .order{
-    margin-bottom: 50px;
-  }
+
   .order h1 {
-    letter-spacing: 4px;
-    font-size: 30px;
-    margin-top: 10px;
- 
+    letter-spacing: 1px;
+    font-size: 25px;
+  }
+  .icon i {
+    font-size: 20px;
   }
 }
